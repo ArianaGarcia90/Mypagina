@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>configuracion</title>
+    <style>
+        /* Estilos generales */
+  body {
+   
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a0e1ffd8;
+    color: #000000;
+    text-align: center;
+  }
+  
+  /* Encabezado */
+  header {
+    background: linear-gradient(to right, #000000, #9ff5f0);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+  .form-config {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-config label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.form-config input[type="text"],
+.form-config input[type="email"],
+.form-config select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-config input[type="submit"] {
+  margin-top: 20px;
+  background-color: #6c5ce7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+  .form-config input[type="submit"]:hover {
+  background-color: #5a4fcf;
+
+}
+
+
+  
+  .logo img {
+    width: 100px;
+    justify-content: space-between; 
+  }
+  /* Alinear imagen y texto del logo */
+  .logo {
+   display: flex;
+   align-items: center;  /* Alinea verticalmente */
+  }
+  
+  /* Ajustar tamaño del logo */
+  .logo img {
+   height: 50px;  /* Ajusta el tamaño según necesites */
+   width: auto;
+   margin-right: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+  /* Estilos del nombre del logo */
+  .logo h1 {
+   font-size: 24px;
+   color: white;  /* Ajusta el color según tu diseño */
+   font-weight: bold;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    text-decoration: rgb(1, 1, 7);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  
+  
+  nav ul li a:hover {
+    background: white;
+    color: #050103;
+  }
+  /* Banner */
+  .banner img {
+    width: 80%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* Íconos */
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .icon {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .icon:hover {
+    background: #f8bbd0;
+  }
+  
+  /* Contenido */
+  iframe {
+    width: 90%;
+    height: 400px;
+    border: none;
+    margin: 20px 0;
+  }
+  
+  /* Botón */
+  .boton {
+    display: inline-block;
+    background: #d81b60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .boton:hover {
+    background: #880e4f;
+  }
+  /* Pie de página */
+  footer {
+    background: #f17ac4;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+  }
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .whatsapp:hover {
+    background-color: #1ebe5b;
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src = "img/logo.png" alt="Logo ITH" style="width: 100px; height: auto;"> 
+            <h1>Logo ITH</h1>
+        </div>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Servicios.html" title="ir a...">Servicios</a></li>
+            <li><a href="galeria.html"  title="ir...a">Galeria</a></li>
+            <li><a href="productos.html" title="r a...">Productos</a></li>
+            <li><a href="Contactos.html"  title="ir a...">Contactos</a></li>
+            <li><a href="Aplicacion.html"  title="ir a...">Aplicacion</a></li>
+            <li><a href="configuracion.html"  title="ir a...">Configuracion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <h1>Configuración de Usuario</h1>
+
+    <form class="form-config">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Tu nombre">
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" placeholder="tucorreo@email.com">
+
+      <label for="tema">Tema:</label>
+      <select id="tema">
+        <option value="claro">Claro</option>
+        <option value="oscuro">Oscuro</option>
+      </select>
+
+      <input type="submit" value="Guardar Cambios">
+    </form>
+  </main>
+    
+</body>
+</html>
